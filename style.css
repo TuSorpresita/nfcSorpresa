@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+section .content {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#home {
+    background: url('img/foto-36.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+#viajes, #galeria {
+    background-color: white;
+    color: #333;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.grid-item img,
+.grid-item video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posición fija para mantenerlo en la vista */
+    z-index: 1000; /* Z-index alto para que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar scroll si el contenido es más grande que la pantalla */
+    background-color: rgba(0,0,0,0.9); /* Fondo oscuro semi-transparente */
+}
+
+.modal-content {
+    margin: auto; /* Centrar el contenido del modal */
+    display: block;
+    max-width: 90%; /* Ancho máximo del contenido del modal */
+    max-height: 90%; /* Altura máxima del contenido del modal */
+}
+
+/* Botón para cerrar el modal */
+.close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para videos */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción de 16:9 para videos responsivos */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 

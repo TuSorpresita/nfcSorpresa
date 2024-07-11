@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Completa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#viajes">Viajes</a></li>
+                <li><a href="index.html#galeria">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="galeria-completa">
+        <div class="content">
+            <h3>Fotitos y videos</h3>
+            <p>Algunas de nuestras fotitos y videos.</p>
+            <div class="grid" id="galeria-grid">
+                <!-- Las fotos y videos serán generados por el script -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor del modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="imgModal" src="" alt="Imagen o video">
+            <video id="videoModal" controls></video>
+        </div>
+        <div id="caption"></div>
+    </div>
+
+    <script src="fotos.js"></script>
+</body>
+</html>
